@@ -160,7 +160,7 @@
 // 1.ამოიღეთ მარტო ლუწი რიცხვები
 // 2.ამოიღეთ კენტი რიცხვები
 
-// task 11
+// task 11 -  for of
 // let users = [
 //     {userName: "Giorgi", status: false},
 //     {userName: "Levani", status: false},

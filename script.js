@@ -29,16 +29,28 @@
 //   console.log (sum);
 // }
 
-//task 5
+// task 5
 // let array4 = [1, 2, 3, 7, 6, 9];
 // let sum = 0;
-// let avg = 0;
 // for (let a = 0; a < array4.length; a++) {
 //     // console.log(array4[a]);
 //     sum += array4[a];
-//     avg = sum / array4.length
-//     console.log (avg);
+    
 // }
+// avg = sum / array4.length
+//     console.log (avg);
+
+//task 5_2
+
+// let array4 = [1, 2, 3, 7, 6, 9];
+// let sum = 0;
+
+// for (const element of array4) {
+//     sum += element;
+// }
+// avg = sum / array4.length
+// console.log (avg);
+
 
 //task 6
 
@@ -82,7 +94,7 @@
 //         console.log (error);
 //     }
 
-// task 9
+// task 9 - for off better 
 // let array = [
 //   [2, -3, 5, 10],
 //   [25, -24, -11, 100],
@@ -90,31 +102,60 @@
 // ];
 
 // for (let a = 0; a < array.length; a++) {
-//   let element = array[a];
+//  const element = array[a];
+// //  console.log (element[a]); 
 
-//   if (element > 0) {
-//     console.log(element);
-//   }
+// for (let x = 0; x < element.length; x++){
+//     console.log (element[x]);
+
+//     const positive = element[x];
+//     if (positive > 0) {
+//      console.log(positive);
+//  }
 // }
+// }
+   
+
+//task 9_2
+
+// let array = [
+//   [2, -3, 5, 10],
+//   [25, -24, -11, 100],
+//   [-6, -7, 10],
+// ];
+
+// for (const item of array) {
+//     // console.log (item);
+    
+//     for (const element of item) {
+//         // console.log (element);
+        
+//         if (element > 0) {
+//             console.log ( element);
+//         }
+//     }
+// }
+
+
 
 //  მოცემული მასივიდან for ციკლი ს საშუალებით კონსოლში გამოიტანეთ მხოლოდ დადებითი რიცხვები:
 // let array = [ [2, -3, 5, 10], [25, -24, -11, 100], [-6, -7, 10] ];
 
 // task 10
 
-let array = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
-for (let a = 0; a < array.length; a++) {
-  if (array[a] % 2 == 0) {
-    console.log(array[a]);
-  }
-}
+// let array = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
+// for (let a = 0; a < array.length; a++) {
+//   if (array[a] % 2 == 0) {
+//     console.log(array[a]);
+//   }
+// }
 
-let array1 = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
-for (let b = 0; b < array1.length; b++) {
-  if (array1[b] % 2 == 1) {
-    console.log(array[b]);
-  }
-}
+// let array1 = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
+// for (let b = 0; b < array1.length; b++) {
+//   if (array1[b] % 2 == 1) {
+//     console.log(array[b]);
+//   }
+// }
 
 // 1.ამოიღეთ მარტო ლუწი რიცხვები
 // 2.ამოიღეთ კენტი რიცხვები
@@ -125,8 +166,12 @@ for (let b = 0; b < array1.length; b++) {
 //     {userName: "Levani", status: false},
 //     {userName: "Anna", status: true}
 // ]
-// if (users.status = true) {
-//     console.log (users.userName);
+// for (const item of users) {
+//     // console.log(item); 
+//     if (item.status == true) {
+//     console.log (item);
+// }
+
 // }
 
 // Კონსოლში გამოიტანეთ მარტო ის ობიექტი, რომლის status property-ის მნიშვნელობა არის true;
